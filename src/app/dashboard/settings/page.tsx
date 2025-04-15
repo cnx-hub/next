@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function settingsPage() {
   return (
-    <div>settingsPage</div>
+    <div> Settings Content</div>
   )
 }
