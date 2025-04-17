@@ -9,12 +9,8 @@ const linkData = [
   { name: "Scale", href: "/scale" },
 ];
 
-const accessLink = ["/", "/performance", "/reliability", "/scale"];
-
 export default function Header() {
   const pathname = usePathname();
-
-  if (!accessLink.includes(pathname)) return null;
 
   return (
     <div className="absolute w-full z-10">

@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/hero";
+import Hero from "../../components/hero";
 import reliabilitySrc from '/public/reliability.jpg'
 import { Metadata } from 'next'
 
