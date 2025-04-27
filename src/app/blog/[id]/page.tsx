@@ -1,7 +1,14 @@
 import { Card } from "antd";
 import { data } from "@/data";
 
-const Page = ({ params }: { params: { id: string } }) => {
+interface IParams { params: { id: string } }
+export async function generateMetadata({ params }: IParams) {
+  return {
+    title: `博客详情 - ${params.id}`
+  }
+}
+
+const Page = ({ params }: IParams) => {
   const item = data.find((item) => item.id === +params.id)!;
 
   return (
